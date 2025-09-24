@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Configure Gemini AI
-API_KEY = "AIzaSyBbzwF8qA_uSAa7aepdGfv9dNlqBBkRa2E"
+API_KEY = "  "//add api key
 genai.configure(api_key=API_KEY)
 
 # Initialize the model
@@ -55,3 +55,4 @@ if __name__ == '__main__':
         shutil.move('genai.html', 'templates/genai.html')
     
     app.run(debug=True, port=5000)
+
